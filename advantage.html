@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quartermaster Tools</title>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a id="home" href="index.html">
+    <h2><img alt="Quartermaster Logo" src="images/logo.png">Quartermaster</h2>
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tips.html">GM Tips</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="generators.html">Generators</a></li>
+      <li><a href="maps.html">Maps</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="adventures.html">Adventures</a></li>
+      <li><a href="advantage.html">Advantage</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  <main>
+    <header>
+      <h1>A Look at Advantage</h1>
+    </header>
+    <section class="hero">
+      <h2>The Value of "Advantage"</h2>
+        <p>D&D 5th Edition adopted an innovative mechanic into its core rules called "Advantage" and "Disadvantage". The concept is that 
+          a roll made with advantage is cast twice, with the better result being taken (worst result taken for disadvantage). For example, if a 
+          success roll is required by rolling 1d20, 2d20 is rolled instead and the higher roll is taken.
+        </p>
+        <p>
+          This mechanic is simple and exciting for players, and clearly demonstrates circumstantial impact on a task more elegantly than the deprecated 
+          floating +2 bonuses of previous editions...but there's a catch
+        </p>
+    </section>
+    <section class="content">
+      <div id="tools_advantage">
+        <h2>Whats the Point?</h2>
+        <p>We get it, advantage is cool. But there is a nuance that might not be obvious at first glance. Since advantage doesnt actually
+          modify the RANGE of a roll, its impact is not static, like a +2 bonus. The relative bonus of advantage changes based on what the target number
+          of the roll is. Lets look at a table of values to clarify this.
+        </p>
+        <div id="table_container">
+        <table>
+          <tr>
+            <th>Roll</th>
+            <th>Chance of <br>Success</th>
+            <th>Chance with <br>Advantage</th>
+            <th>Increase</th>
+            <th>Approximate<br> Bonus</th>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">1</td>
+            <td class="table_data">100%</td>
+            <td class="table_data">100%</td>
+            <td class="table_data">0.00%</td>
+            <td class="table_data">0</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">2</td>
+            <td class="table_data">95%</td>
+            <td class="table_data">99.75%</td>
+            <td class="table_data">4.75%</td>
+            <td class="table_data">1</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">3</td>
+            <td class="table_data">90%</td>
+            <td class="table_data">99.00%</td>
+            <td class="table_data">9.00%</td>
+            <td class="table_data">2</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">4</td>
+            <td class="table_data">85%</td>
+            <td class="table_data">97.75%</td>
+            <td class="table_data">12.75%</td>
+            <td class="table_data">3</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">5</td>
+            <td class="table_data">80%</td>
+            <td class="table_data">96.00%</td>
+            <td class="table_data">16.00%</td>
+            <td class="table_data">3</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">6</td>
+            <td class="table_data">75%</td>
+            <td class="table_data">93.75%</td>
+            <td class="table_data">18.75%</td>
+            <td class="table_data">4</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">7</td>
+            <td class="table_data">70%</td>
+            <td class="table_data">91.00%</td>
+            <td class="table_data">21.00%</td>
+            <td class="table_data">4</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">8</td>
+            <td class="table_data">65%</td>
+            <td class="table_data">87.75%</td>
+            <td class="table_data">22.75%</td>
+            <td class="table_data">5</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">9</td>
+            <td class="table_data">60%</td>
+            <td class="table_data">84.00%</td>
+            <td class="table_data">24.00%</td>
+            <td class="table_data">5</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">10</td>
+            <td class="table_data">55%</td>
+            <td class="table_data">79.75%</td>
+            <td class="table_data">24.75%</td>
+            <td class="table_data">5</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">11</td>
+            <td class="table_data">50%</td>
+            <td class="table_data">75.00%</td>
+            <td class="table_data">25.00%</td>
+            <td class="table_data">5</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">12</td>
+            <td class="table_data">45%</td>
+            <td class="table_data">69.75%</td>
+            <td class="table_data">24.75%</td>
+            <td class="table_data">5</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">13</td>
+            <td class="table_data">40%</td>
+            <td class="table_data">64.00%</td>
+            <td class="table_data">24.00%</td>
+            <td class="table_data">5</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">14</td>
+            <td class="table_data">35%</td>
+            <td class="table_data">57.75%</td>
+            <td class="table_data">22.75%</td>
+            <td class="table_data">5</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">15</td>
+            <td class="table_data">30%</td>
+            <td class="table_data">51.00%</td>
+            <td class="table_data">21.00%</td>
+            <td class="table_data">4</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">16</td>
+            <td class="table_data">25%</td>
+            <td class="table_data">43.75%</td>
+            <td class="table_data">18.75%</td>
+            <td class="table_data">4</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">17</td>
+            <td class="table_data">20%</td>
+            <td class="table_data">36.00%</td>
+            <td class="table_data">16.00%</td>
+            <td class="table_data">3</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">18</td>
+            <td class="table_data">15%</td>
+            <td class="table_data">27.75%</td>
+            <td class="table_data">12.75%</td>
+            <td class="table_data">3</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">19</td>
+            <td class="table_data">10%</td>
+            <td class="table_data">19.00%</td>
+            <td class="table_data">9.00%</td>
+            <td class="table_data">2</td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_data">20</td>
+            <td class="table_data">5%</td>
+            <td class="table_data">9.75%</td>
+            <td class="table_data">4.75%</td>
+            <td class="table_data">1</td>
+          </tr>
+        </table>
+      </div>
+        <p>In the above table, success means rolling equal to or above the result in 
+          the "Roll" column. So if you have to roll a 10 or higher, there is a 55% chance of succeeding.
+        </p>
+        <h2>What This Means</h2>
+        <p>What this table illustrates is that the relative value of advantage depends on the target of the roll.
+          If you need to roll a 10 or higher, advantage gives you a relative bonus of +5. While if you have to roll an 19
+          or higher, advantage gives you a relative bonus of +2.
+        </p>
+        <p>In a play example, lets say a target difficulty check is 15, and the character has a bonus to the roll of +5. To succeed
+          the player must roll a 10 or higher. In this case, advantage gives them a relative bonus of +5. That's much better than the old-school 
+          +2 bonus!
+        </p>
+        <p>Let's say another character is also trying to achieve that goal, but they have a penalty to the roll of -5. They can only
+          succeed on a roll of 20. Advantage here gives them an approximate bonus of +1. This is a case where a flat +2 would be more impactful.
+        </p>
+        <p>In a final example, let's say that a creature has an armor class of 30, and a character has a bonus to hit of +10. The only way for the 
+          character to hit the creature with an attack is to roll a 20. Advantage here gives the character an approximate bonus of +1 : no matter what
+          they still have to roll a 20.
+        </p>
+        <h2>Criticals, Fumbles, and Conclusions</h2>
+        <p>One last note about this analysis is that it doesn't take into consideration critical success and failure. At many tables, a natural roll of 20 is 
+          an automatic success, and a natural roll of 1 is an automatic failure. Advantage/Disadvantage DOUBLES the chance of both critical success and critical 
+          failure. This is another factor in considering the value of static bonuses vs advantage/disadvantage.
+        </p>
+        <p>Ultimately, there is no one system that is better 
+          or worse than the other, however there is one distinct benefit to advantage/disadvantage: speed of play. A faster game means more play, and there is nothing
+          better than more play.
+        </p>
+      </div>
+    </section>
+    <section class="transition">
+      <img alt="Stormy Castle Cliffs" src="images/stormyCastle_Cropped.png" class="stormy">
+      <h2>Get started here!</h2>
+    </section>
+    <section class="infocards">
+      <a href="tips.html">
+        <div class="card">
+          <div class="image-placeholder" id="gm"></div>
+          <div class="text">First time GM? Look no further!</div>
+        </div>
+      </a>
+      <a href="audio.html">
+        <div class="card">
+          <div class="image-placeholder" id="msc"></div>
+          <div class="text">Need some music for your next session?</div>
+        </div>
+      </a>
+      <a href="adventures.html">
+        <div class="card">
+          <div class="image-placeholder" id="adv"></div>
+          <div class="text">Encounters, adventure hooks, and dungeons await!</div>
+        </div>
+      </a>
+      <a href="advantage.html">
+        <div class="card">
+          <div class="image-placeholder" id="dce"></div>
+          <div class="text">Interested in Dice Math?</div>
+        </div>
+      </a>
+    </section>
+  </main>
+  <footer>
+    <small>
+      Copyright &copy; 2022 Quartermaster<br>
+      All images on this site were generated by Midjourney<br>
+      <a href="mailto:ben@vanopdorp.com">ben@vanopdorp.com</a>
+    </small>
+  </footer>
+</body>
+</html>

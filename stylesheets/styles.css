@@ -1,0 +1,340 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #181E1C;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: 2px solid #F5D6A8;
+  background-color: #181E1C;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 3em;
+  color: #efc487;
+}
+
+nav img {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 15%;
+  margin: 5px;
+  margin-bottom: 0;
+  box-shadow: 5px 5px 5px #2E0000;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav li {
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 10%;
+  background-color: #94614E;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px;
+  color: #181E1C;
+  text-decoration: none;
+}
+
+nav ul a:hover,
+nav a:focus {
+  transition: all .2s ease-in-out;
+  transform: scale(1.05);
+  background-color: #AE5433;
+  color: #F5F5DC;
+  border-radius: 10%;
+}
+
+nav a#home:hover,
+nav a#home:focus {
+  transition: all .2s ease-in-out;
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #efc487;
+  text-align: center;
+  margin-bottom: 0;
+  text-decoration: underline;
+  text-decoration-color: #AE5433;
+}
+
+li>ul>li {
+  font-size: .7em;
+}
+
+main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #94614E;
+  text-align: center;
+  align-items: center;
+}
+
+main h2 {
+  margin-top: 80px;
+  font-size: 3em;
+  color: #efc487;
+}
+
+main a:link {
+  color: #AE5433;
+  text-decoration: none;
+}
+
+main a:hover,
+main a:focus {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+main a:visited {
+  color: #227558;
+}
+
+.hero,
+.content {
+  max-width: 700px;
+}
+
+.hero p {
+  margin-top: 50px;
+}
+
+.content h2 {
+  font-size: 2em;
+  color: #F5D6A8;
+}
+
+.content ul {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.content li {
+  padding: 5px;
+}
+
+.content a {
+  color: #AE5433;
+  text-decoration: underline;
+}
+
+.content a:hover,
+.content a:focus {
+  color: #F5F5DC;
+}
+
+.infocards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 52px;
+  margin-bottom: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+  text-align: center;
+}
+
+.image-placeholder {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border-radius: 8px;
+  margin: 5px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-placeholder#gm {
+  background-image: url(../images/mountains.png);
+}
+
+.image-placeholder#msc {
+  background-image: url(../images/town.png);
+}
+
+.image-placeholder#adv {
+  background-image: url(../images/monster.png);
+}
+
+.image-placeholder#dce {
+  background-image: url(../images/dice_abstract.png);
+}
+
+.image-placeholder a {
+  width: 100%;
+}
+
+.image-placeholder a:hover,
+.image-placeholder a:focus {
+  background-color: #AE5433;
+  color: #F5F5DC;
+  border-radius: 10%;
+}
+
+.stormy {
+  margin-top: 50px;
+  width: 100%;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  color: #94614E;
+}
+
+footer a {
+  display: inline;
+  color: #AE5433;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #FFF;
+}
+
+#table_container {
+  overflow-x: auto;
+}
+
+/*table*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+th {
+  padding: 0 15px;
+  border-bottom: 1px solid #AE5433;
+  color: #AE5433;
+  background-color: #181E1C;
+}
+
+tr:nth-child(odd) {
+  background-color: #323836;
+}
+
+/*Contact Page*/
+main.contact {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+main.contact h1 {
+  margin-bottom: 100px;
+}
+
+main.contact img {
+  float: left;
+  margin: 20px;
+  width: 50%;
+  max-width: 900px;
+}
+
+main.contact img#mobile {
+  display: none;
+}
+
+#contact_form {
+  display: inline-block;
+  width: 45%;
+}
+
+#contact_form h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+#footer_contact {
+  margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 64em) {
+  .card {
+    max-width: 120px;
+  }
+
+  .image-placeholder {
+    height: 120px;
+    width: 120px;
+  }
+
+  /* Disable image for tablet screens on contact page*/
+  main.contact img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:37.5em) {
+
+  h1{
+    font-size: 2.5em;
+  }
+  
+  .content {
+    max-width: 100%;
+  }
+
+  nav h2 {
+    font-size: 2.5em;
+  }
+
+  main {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  main h2 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  main.contact h1 {
+    margin-bottom: 20px;
+  }
+
+  /* Cancel Float and show image for small screens*/
+  main.contact img#mobile {
+    display: inline-block;
+    float: none;
+    width: 90%;
+  }
+
+}
